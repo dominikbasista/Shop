@@ -7,6 +7,7 @@
 
 {% block content %}
     <h1>Koszyk na zakupy</h1>
+    <table>
     <thead>
     <tr>
         <th>Obraz</th>
@@ -23,11 +24,11 @@
             <tr>
                 <td>
                     <a href="{{ product.get_absolute_url }}">
-                        <img src="{% if product.pic %}
+                        <img class="img-thumbnail" src="{% if product.pic %}
                           {{ product.pic.url }}
                           {% else %}
                           {% static "img/no_image.png" %}
-                          {% endif %}" alt="">
+                          {% endif %}" alt="{{ product.slug }}">
                     </a>
                 </td>
                 <td>{{ product.name }}</td>
