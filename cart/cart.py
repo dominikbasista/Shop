@@ -7,9 +7,11 @@ class Cart(object):
     def __init__(self, request):
         self.session = request.session
         print("tak wyglada sesia:", self.session)
+        print(dir(self.session))
 
         cart = self.session.get(settings.CART_SESSION_ID)
-        print("tak wyglada cart:", cart)
+        print("tak wyglada settings.CART_SESSION_ID:", settings.CART_SESSION_ID)
+        print("tak wyglada cart:", type(cart))
         if not cart:
             cart = self.session[settings.CART_SESSION_ID] = {}
         self.cart = cart
