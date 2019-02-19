@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>{% block title %}Mój sklep{% endblock %}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +16,10 @@
     <div class="cart">
       {% with total_items=cart|length %}
         {% if cart|length > 0 %}
-          Koszyk:
+            <div id="basket-thumbnail-container">
+            <i class="material-icons">shopping_basket</i>
+{#          Koszyk:#}
+            </div>
           <a href="{% url "cart:cart_detail" %}">
             {{ total_items }} produkt{{ total_items|pluralize:"y" }},
             {{ cart.get_total_price }} zł

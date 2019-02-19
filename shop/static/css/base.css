@@ -314,3 +314,13 @@ ul.errorlist {
 .recommendations.cart img {
     width:120px;
 }
+
+
+#basket-thumbnail-container {
+
+    position: relative;
+    display: inline;
+    float: left;
+    margin-right: 5px;
+    margin-top: -5px;
+}
