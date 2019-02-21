@@ -2,6 +2,10 @@ from django.db import models
 from django.urls import reverse
 
 
+class SampleModel(models.Model):
+    text = models.TextField(default="First element Sample text")
+
+
 class Category(models.Model):
     name = models.CharField(max_length=200,
                             db_index=True)
