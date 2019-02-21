@@ -13,6 +13,7 @@
         <th>Obraz</th>
         <th>Produkt</th>
         <th>Ilość</th>
+{#        <th>Zmień</th>#}
         <th>Usuń</th>
         <th>Cena</th>
         <th>Kwota</th>
@@ -32,14 +33,17 @@
                     </a>
                 </td>
                 <td>{{ product.name }}</td>
+{#                <td>{{ item.quantity }}</td>#}
                 <td>
-                <form action="{% url "cart:cart_add" product.id %}" method="POST">
-                    {{ product.update_quantity_form.quantity }}
-                    {{ product.update_quantity_form.update }}
-                    <input class="btn btn-small" type="submit" value="Zmień">
+                <form action="{% url "cart:cart_add" product.id %}" method="post">
+                    {{ item.update_quantity_form.quantity }}
+                    {{ item.update_quantity_form.update }}
+                    <input class="btn btn-danger btn-small" type="submit" value="Zmień">
                     {% csrf_token %}
-                </form></td>
-                <td><a href="{% url "cart:cart_remove" product.id %} }}">Usuń</a></td>
+                </form>
+                </td>
+                <td><a href="{% url "cart:cart_remove" product.id %}">Usuń</a></td>
+
                 <td>{{ item.price }} zł</td>
                 <td>{{ item.total_price }} zł</td>
             </tr>

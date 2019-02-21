@@ -324,3 +324,12 @@ ul.errorlist {
     margin-right: 5px;
     margin-top: -5px;
 }
+
+td img {
+    max-height: 50px;
+}
+
+.product-list img {
+    height: 190px;
+    width: auto;
+}
