@@ -25,8 +25,8 @@ class SampleModelTest(TestCase):
         first_Model = all_saved_items[0]
         second_Model = all_saved_items[1]
 
-        self.assertEqual(first_item.text, "First element Sample text")
-        self.assertEqual(second_item.text, "Second element Sample text")
+        self.assertEqual(first_Model.text, "First element Sample text")
+        self.assertEqual(second_Model.text, "Second element Sample text")
 
 
 
@@ -44,7 +44,7 @@ class AddProductToDBTest(TestCase):
         Model.stock = 6
         Model.available = True
         Model.created = datetime.datetime.now()
-        Model.updated = datetime.datetime.now()+datetime.timedelta(hours=2)
+        Model.updated = datetime.datetime.now() + datetime.timedelta(hours=2)
 
         sample_name= "Wojna i pokuj"
         sample_slug = "wojna-i-pokuj"
@@ -57,6 +57,13 @@ class AddProductToDBTest(TestCase):
         sample_created = datetime.datetime.now()
         sample_updated = datetime.datetime.now() + datetime.timedelta(hours=2)
 
-        item = Product.object.all(name="Wojna i pokuj")
+        item = Product.objects.all(name="Wojna i pokuj")
 
         self.assertEqual(item.name, sample_name)
+        self.assertEqual(item.slug, sample_slug)
+        self.assertEqual(item.name, sample_name)
+        self.assertEqual(item.image, sample_image)
+        self.assertEqual(item.descritption, sample_description)
+        self.assertEqual(item.price, sample_price)
+        self.assertEqual(item.stock, sample_stock)
+        self.assertEqual(item.available, sample_available)
