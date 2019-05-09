@@ -117,6 +117,10 @@ ul.errorlist {
    padding:0;
 }
 
+.v-navigation-drawer {
+    font-family: 'Cinzel', serif;
+}
+
 
 #header {
     padding:10px 100px;
