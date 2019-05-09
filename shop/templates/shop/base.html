@@ -2,37 +2,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <title>{% block title %}Mój sklep{% endblock %}</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <title>{% block title %}Old Barber's Corner Club{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
-  <div id="header">
-    <a href="/" class="logo">Mój sklep</a>
-  </div>
-  <div id="subheader">
-    <div class="cart">
-      {% with total_items=cart|length %}
-        {% if cart|length > 0 %}
-            <div id="basket-thumbnail-container">
-            <i class="material-icons">shopping_basket</i>
-{#          Koszyk:#}
-            </div>
-          <a href="{% url "cart:cart_detail" %}">
-            {{ total_items }} produkt{{ total_items|pluralize:"y" }},
-            {{ cart.get_total_price }} zł
-          </a>
-        {% else %}
-          Koszyk jest pusty.
-        {% endif %}
-      {% endwith %}
-    </div>
-  </div>
-  <div id="content">
-    {% block content %}
-    {% endblock %}
-  </div>
+<div id="app">
+    <v-app id="inspire">
+        <v-container fluid pa-0>
+            <v-layout row wrap>
+                <v-flex xs2>
+                    <v-navigation-drawer permanent fixed dark width="210px">
+                        <v-toolbar flat color="#263238">
+                            <v-list>
+                                <v-list-tile>
+                                    <v-list-tile-avatar>
+                                        <img src="../../static/img/logotype.png">
+                                    </v-list-tile-avatar>
+                                    <v-list-tile-title class="title">
+                                        MENU
+                                    </v-list-tile-title>
+                                </v-list-tile>
+                            </v-list>
+                        </v-toolbar>
+
+                        <v-divider></v-divider>
+
+                        <v-list class="pt-0">
+                            {% for c in categories %}
+                                <v-list-tile
+                                        :class="{% if category.slug == c.slug %} 'text-md-center selected'{% endif %}"
+                                        :key="'{{ c.name }}'"
+                                        {#                                        @click="'{{ c.get_absolute_url }}'"#}
+                                        :href="'{{ c.get_absolute_url }}'"
+                                >{{ c.name }}
+                                    <v-list-tile-action>
+                                        <v-icon></v-icon>
+                                    </v-list-tile-action>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title></v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            {% endfor %}
+                            <v-list-tile
+                                    {#                                        :class="{% if category.slug == c.slug %}class='selected'{% endif %}"#}
+                                    {#                                        :key="LOGIN"#}
+                                    {#                                        @click="'{{ c.get_absolute_url }}'"#}
+                                    :href="'{{ c.get_absolute_url }}'"
+                            >
+                                <v-list-tile-action>
+                                    <v-icon></v-icon>
+                                </v-list-tile-action>
+
+                                <v-list-tile-content>
+                                    <v-list-tile-title></v-list-tile-title>
+                                </v-list-tile-content>
+                            </v-list-tile>
+                        </v-list>
+                    </v-navigation-drawer>
+                </v-flex>
+                <v-flex xs10 pa-0>
+
+                    {% if category.slug == None %}
+                        <div id="wallpaper"></div> {% endif %}
+                    {#                       <div id="wallpaper"></div>#}
+                    <div class="upper_cont">
+                        <div class="cart">
+                            <a href="{% url 'cart:cart_detail' %}">
+                                <v-icon>
+                                    shopping_cart
+                                </v-icon>
+                                {{ cart.get_total_price }} PLN
+                            </a>
+
+                        </div>
+
+                        {% if user.is_authenticated %}
+                            <v-btn small outline color="success">LOGOUT</v-btn>
+                        {% else %}
+                            <v-btn small outline color="success">LOGIN</v-btn>
+                        {% endif %}
+                        <v-btn small outline color="warning">SIGN UP</v-btn>
+                    </div>
+
+                    <div id="content">
+                        <v-content>
+                            <v-container>
+                                {% block content %}
+                                {% endblock %}
+                            </v-container>
+                        </v-content>
+                    </div>
+                </v-flex>
+            </v-layout>
+        </v-container>
+        {#</div>#}
+    </v-app>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        delimiters: ["[[", "]]"],
+        data: {
+            name: "dominik"
+        }
+    })
+</script>
 </body>
 </html>
