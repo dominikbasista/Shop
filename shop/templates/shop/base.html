@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
     <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
@@ -17,29 +17,32 @@
         <v-container fluid pa-0>
             <v-layout row wrap>
                 <v-flex xs2>
-                    <v-navigation-drawer permanent fixed dark width="210px">
-                        <v-toolbar flat color="#263238">
-                            <v-list>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
-                                        <img src="../../static/img/logotype.png">
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-title class="title">
+                    <v-navigation-drawer primary permanent fixed width="210px" class="left-menu">
+                    <div class="logo_small">
+                                     <img src="/static/img/logo_small.png">
+                                </div>
+                        <v-toolbar flat color="#171717">
+
+                                    <v-list-tile-title class="title bright-font ml-2 pt-1 pb-2">
                                         MENU
                                     </v-list-tile-title>
                                 </v-list-tile>
                             </v-list>
                         </v-toolbar>
 
-                        <v-divider></v-divider>
 
-                        <v-list class="pt-0">
+                            <div class="menu-head">
+                                    </div>
+                            </v-list>
+
+
+                        <v-list dense class="bright-font">
                             {% for c in categories %}
-                                <v-list-tile
-                                        :class="{% if category.slug == c.slug %} 'text-md-center selected'{% endif %}"
+                                <v-list-tile class="ml-3 bright-font menu-item"
+                                        {% if category.slug == c.slug %}:class= "selected"{% endif %}
                                         :key="'{{ c.name }}'"
-                                        {#                                        @click="'{{ c.get_absolute_url }}'"#}
                                         :href="'{{ c.get_absolute_url }}'"
+
                                 >{{ c.name }}
                                     <v-list-tile-action>
                                         <v-icon></v-icon>
@@ -70,27 +73,34 @@
                 <v-flex xs10 pa-0>
 
                     {% if category.slug == None %}
-                        <div id="wallpaper"></div> {% endif %}
+                        <div id="wallpaper">
+                        <div class="logo">
+                            <img src="../static/img/logo.png" alt="">
+                        </div>
+                        {% block form %}
+                                        {% endblock %}
+                        </div> {% endif %}
                     {#                       <div id="wallpaper"></div>#}
                     <div class="upper_cont">
                         <div class="cart">
                             <a href="{% url 'cart:cart_detail' %}">
-                                <v-icon>
+                                <v-icon color="#d6d5d2">
                                     shopping_cart
                                 </v-icon>
-                                {{ cart.get_total_price }} PLN
+                                <div class="total-price">
+                                    {{ cart.get_total_price }} PLN </div>
                             </a>
 
                         </div>
 
                         {% if user.is_authenticated %}
-                            <v-btn small outline color="success">LOGOUT</v-btn>
+                            <a href="{% url 'account:login' %}"><button class="login-btn">LOGOUT</button></a>
                         {% else %}
-                            <v-btn small outline color="success">LOGIN</v-btn>
-                        {% endif %}
-                        <v-btn small outline color="warning">SIGN UP</v-btn>
-                    </div>
+                            <a href="{% url 'account:login' %}"><button class="login-btn">LOGIN</button></a>
 
+                        {% endif %}
+                        <a href="{% url 'account:sign_up' %}"><button class="sign-up-btn">SIGN UP</button></a>
+                    </div>
                     <div id="content">
                         <v-content>
                             <v-container>
@@ -115,7 +125,16 @@
         data: {
             name: "dominik"
         }
-    })
+    });
+    Vue.use(Vuetify, {
+  theme: {
+    primary: '#171717',
+    secondary: '#b0bec5',
+    accent: '#8c9eff',
+    error: '#b71c1c',
+      background:'#171717',
+  }
+})
 </script>
 </body>
 </html>
