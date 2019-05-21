@@ -18,7 +18,7 @@ a {
 
 
 a.button, input[type="submit"] {
-    color:#fff;
+    color:#d6d5d2;
     background:#5993bb;
     border-radius:4px;
     padding:10px 20px;
@@ -28,7 +28,7 @@ a.button, input[type="submit"] {
 
 a.button.light {
     color:#666;
-    background:#ededed;
+    background:#d6d5d2;
 }
 
 .text-left {
@@ -57,12 +57,12 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr.subtotal {
-    background:#ccc;
+    background:#d6d5d2;
 }
 
 thead th, tbody tr.total {
     background:#5993bb;
-    color:#fff;
+    color:#d6d5d2;
     font-weight:bold;
 }
 
@@ -99,7 +99,7 @@ form p input {
     margin-bottom:10px;
     padding:10px 12px;
     border:0;
-    background:#efefef;
+    background:#d6d5d2;
     color:#666;
     border-radius:4px;
 }
@@ -184,7 +184,7 @@ ul.errorlist {
     /*!*background-size: cover;*!*/
     /*height: 100px;*/
     /*width: 120px;*/
-    padding: 10%;
+    padding: 10% 10% 0% 10%;
     width: 160px;
     margin-left: auto;
     margin-right: auto;
@@ -485,6 +485,23 @@ td img {
     top:50%;
     display: inline-block;
     position: relative;
+}
+.v-input__control {
+    font-family: Stark;
+    color: #ffc107 !important;
+}
+.v-input__control label, input{
+    font-family: Stark;
+    color: #ffc107 !important;
+    font-size: medium;
+}
+
+.sign-up-form {
+    margin-top: 100px;
+    background-color: rgba(240,239,237, 0.2);
+    width: 50%;
+
+
 }
 
 @font-face {
