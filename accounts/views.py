@@ -2,10 +2,20 @@ import pdb
 from django.http import HttpResponse
 from django.contrib.auth import authenticate,login
 from django.shortcuts import render
-from .forms import LoginForm
+from .forms import LoginForm, SignUpForm
+from .models import Account
 from shop.models import Category
 
 categories = Category.objects.all()
+
+def password_similarity_checker(pass_1, pass_2):
+    if pass_1 == pass_2:
+        return True
+    else:
+        return False, "Password not similar"
+
+
+
 # pdb.set_trace()
 def login(request):
     if request.method == 'POST':
@@ -23,7 +33,25 @@ def login(request):
     return render(request, 'login.html', {'categories': categories, 'form': form})
 
 def sign_up(request):
-    return render(request, 'sign-up.html', {'categories': categories})
+    if request.method == "POST":
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            email = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password')
+            raw_repeat_password = form.cleaned_data.get('raw_repeat_password')
+
+            if password_similarity_checker(raw_password, raw_repeat_password):
+
+                obj = Account.objects.create(email=email, password=raw_password)
+                obj.save()
+                send_registration_email(email)
+
+                return redirect('home')
+    else:
+        print("Invalid form data")
+        form = SignUpForm()
+    return render(request, 'sign-up.html', {'categories': categories, 'form':form})
 
 def account_settings(request, id):
 

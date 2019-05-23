@@ -6,3 +6,9 @@ class LoginForm(forms.Form):
 
         email = forms.EmailField()
         password = forms.CharField(widget = forms.PasswordInput())
+
+class SignUpForm(forms.ModelForm):
+
+        email = forms.EmailField()
+        password = forms.CharField(widget=forms.PasswordInput())
+        repeat_password = forms.CharField(widget=forms.PasswordInput())

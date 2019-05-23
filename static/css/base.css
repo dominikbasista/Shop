@@ -496,12 +496,18 @@ td img {
     font-size: medium;
 }
 
-.sign-up-form {
+.sign-up-form-cont {
     margin-top: 100px;
     background-color: rgba(240,239,237, 0.2);
     width: 50%;
-
-
+    font-family: Stark !important;
+}
+.sign-up-form-cont input {
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #ffc107;
+}
+.sign-up-form input{
+    margin-bottom: 20px !important;
 }
 
 @font-face {

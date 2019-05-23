@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'crispy_forms',
     'shop',
     'cart',
     'orders',
@@ -120,6 +121,7 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+CRISPY_TEMPLATE_PACK = 'bootstrap4' #alpha version
 
 CART_SESSION_ID = 'cart'
 

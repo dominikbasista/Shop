@@ -1,39 +1,41 @@
 {% extends "shop/base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block form %}
-    <v-container class="sign-up-form">
-        <v-layout row>
-            <v-flex md4>
-            </v-flex>
 
-            <v-flex md4>
-                <v-text-field light
-                        label="E-mail"
-                ></v-text-field>
-            </v-flex>
-            <v-flex md4>
-            </v-flex>
+    <v-form method="POST">
+        {% csrf_token %}
+        {#        {{ form.as_p }}#}
+        <v-container class="sign-up-form-cont">
+            <v-layout row>
+                <v-flex md4>
+                </v-flex>
+
+                <v-flex md4>
+{#                    {% for item in form %}#}
+{#                        {{ item|crispy }}#}
+{#                    {% endfor %}#}
+                </v-flex>
+                <v-flex md4>
+                </v-flex>
             </v-layout>
-        <v-layout row>
-            <v-flex md4>
-            </v-flex>
-            <v-flex md4>
-                <v-text-field class="title"
-                        label="Name"
-                ></v-text-field>
-            </v-flex>
-            <v-flex ms4>
-            </v-flex>
-        </v-layout>
-    <v-layout row>
-        <v-flex 12-md class="justify-text-center align-center">
-            <v-card-actions>
-  <v-button class="sign-up-btn">SIGN UP</v-button>
-</v-card-actions>
+            <v-layout row>
+                <v-flex md4>
+                </v-flex>
+                <v-flex md4>
+                       {{ form|crispy }}
+                </v-flex>
+                <v-flex ms4>
+                </v-flex>
+            </v-layout>
+            <v-layout row>
+                <v-flex 12md class="justify-text-center align-center">
+                    <v-card-actions justify-content-center>
+                        <button type="submit" class="sign-up-btn">SIGN UP</button>
+                    </v-card-actions>
 
-</v-flex>
-
-
-        </v-layout>
-    </v-container>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </v-form>
 {% endblock %}
