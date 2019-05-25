@@ -82,11 +82,11 @@
                         </div> {% endif %}
                     {#                       <div id="wallpaper"></div>#}
                     <div class="upper_cont">
+                    <span><v-icon color="#d6d5d2">
+                                    shopping_cart
+                                </v-icon></span>
                         <div class="cart">
                             <a href="{% url 'cart:cart_detail' %}">
-                                <v-icon color="#d6d5d2">
-                                    shopping_cart
-                                </v-icon>
                                 <div class="total-price">
                                     {{ cart.get_total_price }} PLN </div>
                             </a>

@@ -6,7 +6,6 @@ from .forms import LoginForm, SignUpForm
 from .models import Account
 from shop.models import Category
 
-categories = Category.objects.all()
 
 def password_similarity_checker(pass_1, pass_2):
     if pass_1 == pass_2:
@@ -36,7 +35,6 @@ def sign_up(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
         if form.is_valid():
-            form.save()
             email = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password')
             raw_repeat_password = form.cleaned_data.get('raw_repeat_password')
