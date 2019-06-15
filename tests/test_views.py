@@ -12,6 +12,9 @@ class ViewTest(TestCase):
         response = order_create(request)
         self.assertIn(text, response.content.decode())
 
+    def test_page_can_load_all_items(self):
+        pass
+
 
     def test_user_can_login(self):
         pass

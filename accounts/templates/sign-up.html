@@ -10,30 +10,15 @@
             <v-layout row>
                 <v-flex md4>
                 </v-flex>
-
-                <v-flex md4>
-{#                    {% for item in form %}#}
-{#                        {{ item|crispy }}#}
-{#                    {% endfor %}#}
-                </v-flex>
-                <v-flex md4>
-                </v-flex>
-            </v-layout>
-            <v-layout row>
-                <v-flex md4>
-                </v-flex>
                 <v-flex md4>
                        {{ form|crispy }}
                 </v-flex>
-                <v-flex ms4>
+                <v-flex md4>
                 </v-flex>
             </v-layout>
             <v-layout row>
-                <v-flex 12md class="justify-text-center align-center">
-                    <v-card-actions justify-content-center>
+                <v-flex 12md class="text-xs-center">
                         <button type="submit" class="sign-up-btn">SIGN UP</button>
-                    </v-card-actions>
-
                 </v-flex>
             </v-layout>
         </v-container>

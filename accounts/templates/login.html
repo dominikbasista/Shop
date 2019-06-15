@@ -1,4 +1,25 @@
 {% extends "shop/base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
-{% block content %}
+
+{% block form %}
+<v-form method="POST">
+        {% csrf_token %}
+        <v-container class="sign-up-form-cont">
+            <v-layout row>
+                <v-flex md4>
+                </v-flex>
+                <v-flex md4>
+                       {{ form|crispy }}
+                </v-flex>
+                <v-flex md4>
+                </v-flex>
+            </v-layout>
+            <v-layout row>
+                <v-flex 12md class="text-xs-center">
+                        <button type="submit" class="sign-up-btn">LOGIN</button>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </v-form>
 {% endblock %}

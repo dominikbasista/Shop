@@ -113,6 +113,18 @@ ul.errorlist {
    padding:0;
 }
 
+.left-cont{
+    width: 20%;
+    height: 100px;
+    position: fixed;
+    left:0;
+}
+.right-cont {
+    width: 80%;
+    position: absolute;
+    right: 0;
+}
+
 .v-navigation-drawer {
   font-family: 'Freeway Gothic'
 }
@@ -157,6 +169,18 @@ ul.errorlist {
     outline:0;
 
 }
+.login-btn__mobile {
+    background-color: #171717;
+    color: #d6d5d2;
+    width: 43px;
+    height: 13px;
+    border-radius: 8px;
+    z-index: 0;
+    font-size: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline:0;
+}
 .sign-up-btn {
     background-color: #ffc107;
     color: #171717;
@@ -169,6 +193,19 @@ ul.errorlist {
     cursor: pointer;
     outline:0;
 }
+.sign-up-btn__mobile {
+    background-color: #ffc107;
+    color: #171717;
+    width: 43px;
+    height:13px;
+    border-radius: 7px;
+    z-index: 1;
+    margin-left: -20px;
+    font-size: 10px;
+    cursor: pointer;
+    outline:0;
+    display:none;
+}
 .sign-up-btn a {
     cursor: pointer;
 }
@@ -177,6 +214,7 @@ ul.errorlist {
     color: #d6d5d2;
     font-family: 'Stark';
     text-decoration: none;
+    display: inline-block;
 }
 
 .logo_small {
@@ -308,11 +346,20 @@ ul.errorlist {
 .upper_cont form {
     display: inline-block;
 }
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr;*/
+    grid-gap: 20px;
+}
 
 .product-list .item {
-    width:25%;
-    padding:10px 20px 10px 0;
-    float:left;
+
+    /*width:auto;*/
+    height: 150px;
+    /*object-fit: cover;*/
+    /*padding:10px 20px 10px 0;*/
+    /*float:left;*/
     text-align:center;
     line-height:1.2;
     font-family: Stark;
@@ -323,9 +370,12 @@ ul.errorlist {
     color: black;
 }
 
-.product-list .item img {
-    width:100%;
+.product-list .item v-img {
+    /*width:100%;*/
+    /*height: 100%;*/
     margin-bottom:8px;
+    /*object-fit: cover !important;*/
+    /*object-position: 50% 50% !important;*/
 }
 
 .product-detail {
@@ -505,9 +555,40 @@ td img {
 .sign-up-form-cont input {
     margin-bottom: 20px !important;
     border-bottom: 1px solid #ffc107;
+    width: 100%;
 }
 .sign-up-form input{
     margin-bottom: 20px !important;
+}
+.selected a {
+    color: #ffc107;
+}
+.not-selected {
+
+}
+
+@media (max-width: 960px) {
+    .right-cont{
+        width: 100%
+    }
+    /*.login-btn{*/
+        /*width: 43px;*/
+        /*height:13px;*/
+    /*}*/
+    /*.sign-up-btn{*/
+        /*width:43px;*/
+        /*height:13px;*/
+    /*}*/
+}
+@media(max-width: 600px){
+    .login-btn{
+        width: 43px;
+        height:13px;
+    }
+    .sign-up-btn{
+        width:43px;
+        height:13px;
+    }
 }
 
 @font-face {
