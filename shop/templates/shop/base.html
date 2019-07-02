@@ -62,7 +62,7 @@
         </div>
         <div class="right-cont">
         <v-navigation-drawer>
-        <v-toolbar color="#171717" class="hidden-md-and-up">
+        <v-toolbar color="#171717" class="hidden-md-and-up" @click="">
       <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
       <v-toolbar-title>Title</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -104,6 +104,7 @@
                                 <div class="logo">
                                     <img src="../static/img/logo.png" alt="">
                                 </div>
+
                                 {% block form %}
                                 {% endblock %}
                             </div> {% endif %}
@@ -111,6 +112,74 @@
                         <div class="upper_cont">
 
 
+                            <a href="{% url 'cart:cart_detail' %}">
+
+
+                        <v-toolbar flat color="#171717">
+
+                                    <v-list-tile-title class="title bright-font ml-2 pt-1 pb-2">
+                                        MENU
+                                    </v-list-tile-title>
+                                </v-list-tile>
+                            </v-list>
+                        </v-toolbar>
+
+
+                            <div class="menu-head">
+                                    </div>
+                            </v-list>
+
+
+                        <v-list dense class="bright-font">
+                            {% for c in categories %}
+                                <v-list-tile class="ml-3 bright-font menu-item"
+                                        {% if category.slug == c.slug %}:class= "selected"{% endif %}
+                                        :key="'{{ c.name }}'"
+                                        :href="'{{ c.get_absolute_url }}'"
+
+                                >{{ c.name }}
+                                    <v-list-tile-action>
+                                        <v-icon></v-icon>
+                                    </v-list-tile-action>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title></v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            {% endfor %}
+                            <v-list-tile
+                                    {#                                        :class="{% if category.slug == c.slug %}class='selected'{% endif %}"#}
+                                    {#                                        :key="LOGIN"#}
+                                    {#                                        @click="'{{ c.get_absolute_url }}'"#}
+                                    :href="'{{ c.get_absolute_url }}'"
+                            >
+                                <v-list-tile-action>
+                                    <v-icon></v-icon>
+                                </v-list-tile-action>
+
+                                <v-list-tile-content>
+                                    <v-list-tile-title></v-list-tile-title>
+                                </v-list-tile-content>
+                            </v-list-tile>
+                        </v-list>
+                    </v-navigation-drawer>
+                </v-flex>
+                <v-flex xs10 pa-0>
+
+                    {% if category.slug == None %}
+                        <div id="wallpaper">
+                        <div class="logo">
+                            <img src="../static/img/logo.png" alt="">
+                        </div>
+                        {% block form %}
+                                        {% endblock %}
+                        </div> {% endif %}
+                    {#                       <div id="wallpaper"></div>#}
+                    <div class="upper_cont">
+                    <span><v-icon color="#d6d5d2">
+                                    shopping_cart
+                                </v-icon></span>
+                        <div class="cart">
                             <a href="{% url 'cart:cart_detail' %}">
 
                                 <div class="total-price">
@@ -163,6 +232,9 @@
         delimiters: ["[[", "]]"],
         data: {
             name: "dominik"
+        },
+        methods:{
+            active: function(){}
         }
     });
     Vue.use(Vuetify, {
