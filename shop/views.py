@@ -5,9 +5,6 @@ from .models import Product, Category
 from cart.forms import CartAddProductForm
 
 
-def sample_view(request):
-    pass
-
 def products_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()

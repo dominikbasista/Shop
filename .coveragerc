@@ -1,8 +1,2 @@
 [run]
-omit = tests/*,
-migrations/*,
-*settings*,
-*apps.py,
-*manage.py,
-*wsgi.py,
-*urls.py,
+omit = *tests/*, */venv/*, */migrations/*, *settings* *apps.py* *manage.py* *wsgi.py* *urls.py*
