@@ -1,0 +1,31 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+  {% if category %}{{ category.name }}{% else %}Produkty{% endif %}
+{% endblock %}
+
+{% block content %}
+
+<h1>{% if category %}{{ category.name }}{% else %}Produkty{% endif %}</h1>
+  <div id="main" class="product-list">
+    {% for product in products %}
+      <v-card height="180px">
+      <div class="item">
+        <a href="{{ product.get_absolute_url }}">
+            <v-img contain="true" aspect-ratio="1.777" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+            <div class="price-small-cont right mr-2 mt-2">
+            <h3 class="body-2">{{ product.price }} zł</h3>
+                </div>
+            </v-img>
+        </a>
+        <v-card-item-tile><a href="{{ product.get_absolute_url }}" class="title--grey">{{ product.name }}</a></v-card-item-tile><br>
+
+      </div>
+        </v-card>
+
+    {% endfor %}
+  </div>
+
+
+{% endblock %}
