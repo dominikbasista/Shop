@@ -11,7 +11,6 @@ django-crispy-forms==1.7.2
 django-webpack-loader==0.6.0
 Faker==0.9.1
 importlib-metadata==0.18
-pdb==0.12
 ipython==7.6.0
 ipython-genutils==0.2.0
 jedi==0.14.0
