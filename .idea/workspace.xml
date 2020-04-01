@@ -2,79 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd879e53-64ab-4159-89e5-28ba83bf9975" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/main/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/main/templates/shop/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/orders/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/shop/templates/shop/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/shop/urls.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shop/shop/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shop/main/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shop/shop/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shop/main/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shop/orders/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shop/orders/apps.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -103,80 +37,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_COMMON_BRANCH" value="master" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Shop/shop/templates/shop/base.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Shop/main/templates/shop/base.html" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Shop/src/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/Shop/src/Dockerfile" />
-        <option value="$PROJECT_DIR$/Shop/Dockerfile" />
-        <option value="$PROJECT_DIR$/Shop/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/Shop/src/shop/celery_settings.py" />
-        <option value="$PROJECT_DIR$/Shop/src/shop/wsgi.py" />
-        <option value="$PROJECT_DIR$/Shop/src/venv/bin/activate" />
-        <option value="$PROJECT_DIR$/Shop/src/venv/bin/activate.fish" />
-        <option value="$PROJECT_DIR$/Shop/src/venv/bin/activate.csh" />
-        <option value="$PROJECT_DIR$/Shop/src/pytest.ini" />
-        <option value="$PROJECT_DIR$/Shop/src/manage.py" />
-        <option value="$PROJECT_DIR$/Shop/src/cart/cart.py" />
-        <option value="$PROJECT_DIR$/Shop/src/cart/views.py" />
-        <option value="$PROJECT_DIR$/Shop/src/shop/templates/shop/base.html" />
-        <option value="$PROJECT_DIR$/Shop/src/shop/urls.py" />
-        <option value="$PROJECT_DIR$/Shop/main/templates/shop/base.html" />
-        <option value="$PROJECT_DIR$/Shop/shop/templates/shop/base.html" />
-        <option value="$PROJECT_DIR$/Shop/shop/urls.py" />
-        <option value="$PROJECT_DIR$/Shop/orders/views.py" />
-        <option value="$PROJECT_DIR$/Shop/requirements.txt" />
-        <option value="$PROJECT_DIR$/Shop/orders/models.py" />
-        <option value="$PROJECT_DIR$/Shop/shop/views.py" />
-        <option value="$PROJECT_DIR$/Shop/shop/models.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
-  </component>
+  <component name="ProjectId" id="1ZwKLMuCcKecNrp9sfQaetBWrvt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shop" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -187,18 +54,6 @@
       <recent name="C:\Users\domin\Projects\Shop" />
       <recent name="C:\Users\domin\Projects\Shop\Shop" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -251,32 +106,6 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="34163000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21983914" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32892805" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27900147" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32892805" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -285,203 +114,14 @@
     <MESSAGE value="Base template fixed." />
     <option name="LAST_COMMIT_MESSAGE" value="Base template fixed." />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Shop/config/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/Shop/config/nginx/shop.conf" />
-    <entry file="file://$PROJECT_DIR$/Shop/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/Shop/docker-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/requirements.txt" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/importlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/celery_settings.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/pip-script.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/ENV/Lib/importlib/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/cart/cart.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/wsgi.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/models.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/templates/shop/base.html" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/cart/urls.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/cart/views.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/venv/lib/site-packages/django/template/base.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/views.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/urls.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/accounts/urls.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/src/shop/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Shop/accounts/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/main/templates/shop/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="211" column="7" lean-forward="true" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
-          <folding>
-            <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-navigation-drawer#0;n#div#0;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#a#0;n#div#0;n#v-navigation-drawer#0;n#div#0;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-toolbar#0;n#v-navigation-drawer#0;n#div#0;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list#0;n#v-navigation-drawer#0;n#div#0;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-btn#2;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list-tile#0;n#v-list#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list-tile-action#0;n#v-list-tile#0;n#v-list#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list-tile-content#0;n#v-list-tile#0;n#v-list#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#v-list-tile#1;n#v-list#0;n#v-toolbar-items#0;n#v-toolbar#0;n#v-navigation-drawer#0;n#div#1;n#v-app#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/templates/shop/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/tasks.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/templates/orders/order/created.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/templates/orders/order/create.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/main/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/orders/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/Shop-4srIqkd1/Lib/site-packages/django/urls/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/shop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shop/main/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585749279968">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585749279968" />
+    <state x="286" y="56" key="SettingsEditor" timestamp="1585745214554">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="286" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585745214554" />
   </component>
 </project>
