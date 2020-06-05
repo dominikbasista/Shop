@@ -6,7 +6,7 @@ billiard==3.5.0.5
 celery==4.2.0
 coverage==4.5.3
 decorator==4.4.0
-Django==2.1.5
+Django==2.2.13
 django-crispy-forms==1.7.2
 django-webpack-loader==0.6.0
 Faker==0.9.1
